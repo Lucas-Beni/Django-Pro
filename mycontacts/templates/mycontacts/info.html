@@ -1,0 +1,13 @@
+{% extends 'mycontacts/background.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-detail">
+    <h2>{{ contact.name }}</h2>
+    <p><strong>Relation:</strong> {{ contact.relation }}</p>
+    <p><strong>Phone:</strong> {{ contact.phone }}</p>
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+
+    <a href="{% url 'show' %}">Voltar para os contatos</a>
+</div>
+{% endblock content %}
